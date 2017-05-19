@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Launcher/Launcher.iml" filepath="$PROJECT_DIR$/Launcher/Launcher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyUIDemo.iml" filepath="$PROJECT_DIR$/MyUIDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/com.zokers.payapp/com.zokers.payapp.iml" filepath="$PROJECT_DIR$/com.zokers.payapp/com.zokers.payapp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dagger2demo/dagger2demo.iml" filepath="$PROJECT_DIR$/dagger2demo/dagger2demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/music/music.iml" filepath="$PROJECT_DIR$/music/music.iml" />
+      <module fileurl="file://$PROJECT_DIR$/network/network.iml" filepath="$PROJECT_DIR$/network/network.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ui/ui.iml" filepath="$PROJECT_DIR$/ui/ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/util/util.iml" filepath="$PROJECT_DIR$/util/util.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weextest/weextest.iml" filepath="$PROJECT_DIR$/weextest/weextest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zxinglibrary/zxinglibrary.iml" filepath="$PROJECT_DIR$/zxinglibrary/zxinglibrary.iml" />
+    </modules>
+  </component>
+</project>

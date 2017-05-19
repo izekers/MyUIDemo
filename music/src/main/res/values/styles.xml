@@ -1,0 +1,19 @@
+<resources>
+    <attr format="reference" name="cardStyle"/>
+    <attr format="reference" name="ttItemPopupMenuStyle" />
+    <attr format="reference" name="album_default_palette_color" />
+    <attr format="reference" name="default_album_drawable" />
+    <attr format="reference" name="default_singer_drawable" />
+    <attr format="reference" name="divider_color" />
+    <attr format="reference" name="ttPopupMenuStyle" />
+    <attr format="reference" name="selectableItemBackground"/>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+</resources>

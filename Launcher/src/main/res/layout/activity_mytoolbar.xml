@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.zekers.ui.view.widget.MyToolBar
+        android:id="@+id/mytool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/main"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="扫一扫"
+        android:textSize="@dimen/toolbar_btn_txtsize"
+        android:gravity="center"
+        android:background="@color/white"/>
+    <com.zekers.ui.view.widget.MyToolBar
+        android:id="@+id/mytool_bar2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/main"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingLeft="6dp"
+    android:paddingRight="6dp">
+
+    <ImageView
+        android:id="@+id/curtain_item_icon"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/dropdown_menu_item"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:textColor="#FF000000"
+        android:textSize="16sp"
+        android:text="文字"/>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/app_vertical_margin"
+    android:paddingRight="@dimen/app_vertical_margin">
+
+    <LinearLayout
+        android:id="@+id/value_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/line"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            style="@style/line_style">
+
+            <TextView
+                style="@style/name_style"
+                android:text="@string/phone"/>
+
+            <EditText
+                style="@style/value_style"
+                android:inputType="phone"
+                android:layout_weight="3"
+                android:id="@+id/editText" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/line_style">
+
+            <TextView
+                style="@style/name_style"
+                android:text="@string/verification_code"/>
+
+            <EditText
+                style="@style/value_style"
+                android:background="@null"
+                android:inputType="number"/>
+
+            <Button
+                style="@style/button_solid_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/get_verification"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/line_style">
+
+            <TextView
+                style="@style/name_style"
+                android:text="@string/password" />
+
+            <EditText
+                style="@style/value_style"
+                android:background="@null"
+                android:layout_weight="3"
+                android:inputType="textPassword"/>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btn_logup"
+            style="@style/button_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/logup" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_agreen"
+        style="@style/hint_style"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/value_layout"
+        android:layout_marginTop="10dp"
+        android:text="@string/check_logup"/>
+
+    <TextView
+        android:id="@+id/btn_go_logup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/text_agreen"
+        android:layout_marginTop="10dp"
+        android:text="@string/go_login"
+        android:textColor="@android:color/holo_red_light" />
+</RelativeLayout>

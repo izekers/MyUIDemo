@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:paddingTop="4dp"
+    android:paddingBottom="4dp"
+    android:background="#FFFFFFFF">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="8dp"
+        android:id="@+id/item_icon"
+        android:visibility="gone"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/item_name"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@+id/item_icon"
+        android:layout_toEndOf="@+id/item_icon"
+        android:textSize="16sp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/menu_item_right"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/item_name"
+        android:layout_marginLeft="18dp"
+        android:gravity="right">
+
+        <TextView
+            android:id="@+id/item_tip_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="14sp"
+            tools:text="提示"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:visibility="visible"
+            android:layout_toLeftOf="@+id/item_tip"
+            android:paddingRight="4dp"/>
+
+        <RelativeLayout
+            android:id="@+id/item_tip"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/item_tips_point"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/item_tips_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

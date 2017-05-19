@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/linear_divider"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/ability_toolbar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zekers.ui.view.widget.ItemView
+            style="@style/itemview_style"
+            app:lefticon="@drawable/toolbar_back"
+            app:name="@string/bank_account_management"
+            app:right="@drawable/toolbar_back" />
+
+        <com.zekers.ui.view.widget.ItemView
+            style="@style/itemview_style"
+            app:lefticon="@drawable/toolbar_back"
+            app:name="@string/real_name_authentication"
+            app:right="@drawable/toolbar_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zekers.ui.view.widget.ItemView
+            style="@style/itemview_style"
+            app:lefticon="@drawable/toolbar_back"
+            app:name="@string/company_authentication"
+            app:right="@drawable/toolbar_back" />
+
+        <com.zekers.ui.view.widget.ItemView
+            style="@style/itemview_style"
+            app:lefticon="@drawable/toolbar_back"
+            app:name="@string/company_info"
+            app:right="@drawable/toolbar_back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.zekers.ui.view.widget.ItemView
+            style="@style/itemview_style"
+            app:lefticon="@drawable/toolbar_back"
+            app:name="@string/account_soft"
+            app:right="@drawable/toolbar_back" />
+
+        <com.zekers.ui.view.widget.ItemView
+            style="@style/itemview_style"
+            app:lefticon="@drawable/toolbar_back"
+            app:name="@string/about"
+            app:right="@drawable/toolbar_back" />
+
+        <com.zekers.ui.view.widget.ItemView
+            style="@style/itemview_style"
+            app:lefticon="@drawable/toolbar_back"
+            app:name="@string/exit"
+            app:right="@drawable/toolbar_back" />
+    </LinearLayout>
+</LinearLayout>

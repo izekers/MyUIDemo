@@ -1,0 +1,61 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+    defaultConfig {
+        applicationId "com.zekers.myuidemo"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    signingConfigs {
+        com_gz_ability {
+            keyAlias 'com.gz.ability'
+            keyPassword 'com.gz.ability@2016'
+            storeFile file('F:/0.0import/ability.jks')
+            storePassword 'ability@2016'
+        }
+    }
+    productFlavors {
+        one {
+            minSdkVersion 18
+            signingConfig signingConfigs.com_gz_ability
+            targetSdkVersion 23
+        }
+        second {
+            minSdkVersion 18
+            applicationId 'com.zekers.myuidemo'
+            signingConfig signingConfigs.com_gz_ability
+            targetSdkVersion 23
+            versionCode 1
+            versionName '1.0'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':common')
+    compile 'org.jbundle.util.osgi.wrapped:org.jbundle.util.osgi.wrapped.org.apache.http.client:4.1.2'
+    testCompile 'junit:junit:4.12'
+    compile project(path: ':util')
+    compile project(':weextest')
+}

@@ -1,0 +1,1 @@
+include ':Launcher', ':common', ':ui', ':network', ':util', ':dagger2demo', ':music', ':com.zokers.payapp', ':weextest', 'zxinglibrary'
